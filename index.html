@@ -1,0 +1,257 @@
+---
+layout: null
+title: Jekyll Theme - Home Page - Massively
+description: Every great website starts with a great homepage. The homepage tells your viewers what your site is all about and gives your viewers a place to come back to.
+sitemap:
+    priority: 1.0
+    lastmod: 2017-11-02
+    changefreq: weekly
+---
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+  Jekyll integration by somiibo.com
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+    {% include head.html %}
+
+
+	</head>
+	<body>
+
+<div class="page-container">
+
+<div id="sidebar">
+
+    <img src="{{ '/images/profile.jpg' | relative_url }}"
+         class="profile-image"
+         alt="Yukta Jain">
+
+    <h2>Yukta Jain</h2>
+
+    <p class="position">
+        Robotics Engineer
+    </p>
+
+    <div class="sidebar-section">
+
+        <h4>Education</h4>
+
+        <p>
+            <strong>B.Tech</strong><br>
+            Electronics & Telecommunication<br>
+            D. J. Sanghvi College of Engineering
+        </p>
+
+    </div>
+
+    <div class="sidebar-icons">
+
+        <a href="mailto:yuktaj18@gmail.com" title="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="https://github.com/yuktaj18" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+
+    </div>
+
+</div>
+
+    <!-- Main Content -->
+
+    <main class="content">
+
+        <section>
+
+            <h2>About Me</h2>
+
+            <p>
+                Hello, I'm Yukta Jain.
+                 I'm an Robotics Intern at Experiqs Pvt Ltd. I graduated from D.J. Sanghvi College of Engineering with a bachelor's degree in electronics engineering.  
+                 As a member of a robotics team in college, I worked with various sensors, designed circuits on Perfboard, and used Kicad for PCB designing which provided me a strong foundation.Additionally I received a Chanakya fellowship from TIH-IOT, IITB for the project IOT-Enabled Emg Controlled Wheelchair. Apart from robotics, I love reading,painting. 
+            </p>
+
+        </section>
+
+        <section>
+
+            <a class="resume-button" href="{{ '/files/YuktaJain_Resume.pdf' | relative_url }}" target="_blank">
+                View Resume
+            </a>
+
+        </section>
+
+        <section class="hobbies-section">
+            <h2>Work Experince</h2>
+            <p>
+                 At Experiqs I implemented vision-guided pick and place system on the Roarm M2 S arm using Grounding Dino,Visual Language Model, for object detection with ROS2 framework. Currently I'm working with mobile robot, implementing feed forward control loop. I worked at L&T Finance as a graduate engineer trainee. 
+
+            </p>
+
+            <img src="{{ '/videos/video_demo_arm.gif' | relative_url }}" alt="demo " class="hobby-image">
+
+        </section>
+
+        <section>
+
+            <h2>Projects</h2>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+
+                    <div class="project-video">
+                        <img src="{{ '/videos/LineFollower.gif' | relative_url }}" alt="Line Follower Robot demo">
+                    </div>
+
+                    <h3>
+                        <a href="https://github.com/yuktaj18/Line_Follower" target="_blank">
+                            Line Follower Robot
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </h3>
+
+                    <p class="project-description">
+                        A simple line follower robot, following black line, using 2 IR sensors and L298N motor driver for motor control and implemented bare metal firmware for configuring timers, gpio with nucleof103rb.
+                    </p>
+
+                    <ul class="skills">
+                        <li>Embedded C</li>
+                        <li>STM32F103RB</li>
+                    </ul>
+
+                </article>
+
+                <article class="project-card">
+
+                    <div class="project-video">
+                        <img src="{{ '/videos/stm32_bootloader.gif' | relative_url }}" alt="STM32F-103 Bootloader demo">
+                    </div>
+
+                    <h3>
+                        <a href="https://github.com/yuktaj18/simple_bootloader_stm32f103rb" target="_blank">
+                            STM32F-103 Bootloader
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </h3>
+
+                    <p class="project-description">
+                       Implemented a bootloader using libopencm3 in Linux handling vector table relocation and application jumping
+                    </p>
+
+                    <ul class="skills">
+                        <li>Cpp</li>
+                        <li>Bare metal programming</li>
+                    </ul>
+
+                </article>
+
+                <article class="project-card">
+
+                    <div class="project-video">
+                        <img src="{{ '/videos/MPU6050.gif' | relative_url }}" alt="Nucleof103rb demo">
+                    </div>
+
+                    <h3>
+                        <a href="https://github.com/yuktaj18/Nucleo-F103RB" target="_blank">
+                            Nucleof103rb
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </h3>
+
+                    <p class="project-description">
+                        Created driver libraries for different peripherals and commuincation protocols of nucleof103rb such as GPIO, SPI, I2C , USART, RCC.
+                        Implemented bare metal firmware for interfacing MPU6050 sensor with nucleof103rb
+                    </p>
+
+                    <ul class="skills">
+                        <li>Embedded C</li>
+                        <li>Logic Analyzer</li>
+                        <li>I2C</li>
+                        <li>SPI</li>
+                        <li>UART</li>
+                    </ul>
+
+                </article>
+
+                <article class="project-card">
+
+                    <div class="project-video">
+                        <img src="{{ '/videos/mybot.gif' | relative_url }}" alt="Mybot demo">
+                    </div>
+
+                    <h3>
+                        <a href="https://github.com/yuktaj18/mybot" target="_blank">
+                            Mybot
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </h3>
+
+                    <p class="project-description">
+                        A 2 wheeled differential drive robot using ROS2 Jazzy, simulated in gz sim, visualized in rviz2. Integrated slamtoolbox for generating map of the world and Nav2 for autonomous navigation.
+                    </p>
+
+                    <ul class="skills">
+                        <li>ROS2</li>
+                        <li>URDF Modeling</li>
+                        <li>Slamtool box</li>
+                        <li>Nav2</li>
+                    </ul>
+
+                </article>
+
+                <article class="project-card">
+
+                    <div class="project-video">
+                        <img src="{{ '/videos/ros2 arduino.gif' | relative_url }}" alt="ROS2 Fundamental Examples demo">
+                    </div>
+
+                    <h3>
+                        <a href="https://github.com/yuktaj18/ros2_fundamentals_examples" target="_blank">
+                            ROS2 Fundamental Examples
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </h3>
+
+                    <p class="project-description">
+                        Created ROS2 Nodes for publishing and subscribing ultrasonic sensor data and controlling motor using pyserial library.
+                    </p>
+
+                    <ul class="skills">
+                        <li>ROS2 Nodes</li>
+                        <li>Pyserial</li>
+                    </ul>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section class="hobbies-section">
+
+
+            <h2>Hobbies</h2>
+
+            <img src="{{ '/images/hobby.jpg' | relative_url }}" alt="Painting hobby" class="hobby-image">
+
+        </section>
+
+        <!-- Footer -->
+        {% include foot.html %}
+
+    </main>
+
+</div>
+
+{% include scripts-main.html %}
+{% include tracking.html %}
+
+</body>
+</html>
